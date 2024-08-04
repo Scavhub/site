@@ -1,0 +1,51 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(circle, #140101, #360505, #5f1010, #6e0c0c, #330000);
+    color: #fff;
+}
+
+/* FAQ Container Styles */
+.faq-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Styles */
+#scavhub-title {
+    font-size: 2.5em;
+    cursor: pointer;
+    transition: text-shadow 0.3s ease;
+}
+
+#scavhub-title:hover {
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+}
+
+/* FAQ Content Styles */
+.faq-content {
+    margin-top: 20px;
+}
+
+.faq-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    margin: 0 0 10px;
+}
+
+.faq-item p {
+    margin: 0;
+}
+

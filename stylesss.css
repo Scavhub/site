@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle, #140101, #360505, #5f1010, #6e0c0c, #330000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative; /* To position the back image correctly */
+}
+
+/* Back Image Styles */
+.back-link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000; /* Ensure the image is above other elements */
+}
+
+.back-image {
+    width: 80px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 50%; /* Ensures the glow effect is around the image */
+    transition: box-shadow 0.3s ease;
+}
+
+.back-image:hover {
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8); /* Red glow effect on hover */
+}
+
+/* Product Container Styles */
+.product-container {
+    text-align: center;
+    background-color: rgba(20, 20, 20, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Title Styles */
+.main-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff0000;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.main-title:hover {
+    color: #ff6666;
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+}
+
+/* Button Container Styles */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Product Button Styles */
+.product-button {
+    display: block;
+    width: 300px;
+    padding: 20px;
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #ff0000;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-button:hover {
+    border-color: #ff6666;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8); /* Outer glow effect on hover */
+}
+
+/* Price Details Styles */
+.price-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%; /* Start below the button */
+    background: #333;
+    overflow: hidden;
+    border-top: 2px solid #ff0000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: top 0.5s ease;
+}
+
+.product-button:hover .price-details {
+    top: 0; /* Slide up to cover the button */
+}
+
+.price-details img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}

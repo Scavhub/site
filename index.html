@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scav Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="animated-title"></h1>
+        <div class="cards-container">
+            <div class="card" data-url="https://example.com">
+                <div class="card-content">
+                    <h2>Who are we?</h2>
+                    <p>ScavHub is a well-respected script recognized for its exceptional quality and robust security. It offers users a reliable and safe experience, ensuring top performance and peace of mind.</p>
+                </div>
+            </div>
+            <div class="card" id="offersss">
+                <div class="card-content">
+                    <h2>What do we offer?</h2>
+                    <p>Currently holding the title of #1 Decaying Winter script, ScavHub also plans to expand our collection with additional top scripts in the future.</p>
+                </div>
+            </div>
+            <div class="card" data-url="https://discord.gg/scavhub">
+                <div class="card-content">
+                    <h2>Join us</h2>
+                    <p>Join our Discord community to access all our scripts and enjoy a supportive, toxicity-free environment where you can make the most of our offerings.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQ Button -->
+<button id="faq-button">FAQ</button>
+<button id ="products-button">Products</button>
+
+
+
+
+    <script>
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', () => {
+                const url = card.getAttribute('data-url');
+                window.location.href = url;
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
